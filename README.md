@@ -29,8 +29,12 @@ Welcome to my curated collection of beginner-to-intermediate Python projects! Ea
 ---
 
 ### 4. 🗺️ India States Quiz
-- **Concepts Used**: `tkinter`, `csv`
-- An interactive quiz game to test knowledge of Indian states using map-based inputs.
+- **Concepts Used**: `tkinter`, `csv`, image mapping
+- A visual quiz where the player is shown a **state name**, and they must **click on the corresponding state in a map image**.
+- The game compares the user's click location with **predefined coordinates** of Indian states (from a `.csv` file).
+- If the clicked point falls within the correct state's boundary → marked **correct**  
+- Else → marked **wrong**
+- An interactive and engaging way to **learn Indian geography**.
 
 ---
 
@@ -64,9 +68,22 @@ Welcome to my curated collection of beginner-to-intermediate Python projects! Ea
 
 ---
 
-### 9. ❓ QUIZ (True/False)
-- **Concepts Used**: `tkinter`
-- A simple true/false quiz app. Random questions are shown, and the player must decide if the statement is true or false.
+### 9. ❓ QUIZ (True/False Game)
+- **Concepts Used**: `tkinter`, `requests`, API integration
+- A GUI-based quiz that fetches **True/False trivia questions** in real-time using the [Open Trivia Database API](https://opentdb.com).
+- The quiz dynamically pulls 15 questions from random categories (General Knowledge, Science, History, etc.)
+- Sample code:
+  ```python
+  import random
+  import requests
+
+  parameters = {
+      'amount': 15,
+      'category': random.randint(9, 32),
+      'type': 'boolean'
+  }
+  response = requests.get('https://opentdb.com/api.php', params=parameters)
+  question_data = response.json()['results']
 
 ![Quiz Game](images/quiz1.png)
 
