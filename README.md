@@ -71,8 +71,10 @@ Welcome to my curated collection of beginner-to-intermediate Python projects! Ea
 ### 9. ❓ QUIZ (True/False Game)
 - **Concepts Used**: `tkinter`, `requests`, API integration
 - A GUI-based quiz that fetches **True/False trivia questions** in real-time using the [Open Trivia Database API](https://opentdb.com).
-- The quiz dynamically pulls 15 questions from random categories (General Knowledge, Science, History, etc.)
-- Sample code:
+- Questions are randomly selected from different categories between General Knowledge, Science, History, Computers, etc.
+
+- Code snippet:
+
   ```python
   import random
   import requests
@@ -84,6 +86,9 @@ Welcome to my curated collection of beginner-to-intermediate Python projects! Ea
   }
   response = requests.get('https://opentdb.com/api.php', params=parameters)
   question_data = response.json()['results']
+
+- Great for testing your knowledge across multiple domains with a clean UI and instant feedback.
+
 
 ![Quiz Game](images/quiz1.png)
 
