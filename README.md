@@ -2,8 +2,6 @@
 
 Welcome to my curated collection of beginner-to-intermediate Python projects! Each project is designed to practice and demonstrate core programming concepts including **OOP**, **GUI with Tkinter**, **APIs**, **file handling**, and more.
 
-🔗 GitHub Repo: [yaswantharao05/simple-python-projects](https://github.com/yaswantharao05/simple-python-projects.git)
-
 ---
 
 ## 📋 Projects Overview
@@ -70,7 +68,9 @@ Welcome to my curated collection of beginner-to-intermediate Python projects! Ea
 - **Concepts Used**: `tkinter`
 - A simple true/false quiz app. Random questions are shown, and the player must decide if the statement is true or false.
 
-![Quiz Game](images/quiz.png)
+![Quiz Game](images/quiz1.png)
+
+![Quiz Game](images/quiz2.png)
 
 ---
 
@@ -78,7 +78,9 @@ Welcome to my curated collection of beginner-to-intermediate Python projects! Ea
 - **Concepts Used**: `turtle`, OOP, file handling
 - A classic Snake game built with turtle graphics. Tracks high score using external file storage.
 
-![Snake Game](images/snake_game.png)
+![Snake Game](images/snake_game1.png)
+
+![Snake Game](images/snake_game2.png)
 
 ---
 
